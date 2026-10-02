@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1280" height="720" fill="#18181b"/>
+  <g fill="none" stroke="#27272a" stroke-width="1">
+    <path d="M0 120H1280M0 240H1280M0 360H1280M0 480H1280M0 600H1280"/>
+    <path d="M160 0V720M320 0V720M480 0V720M640 0V720M800 0V720M960 0V720M1120 0V720"/>
+  </g>
+
+  <!-- Everything sits in the central 680px so square crops keep the whole drawing. -->
+  <text x="640" y="200" text-anchor="middle" fill="#fafafa" font-size="60" font-weight="700" letter-spacing="-1">Agent AI Call</text>
+  <text x="640" y="246" text-anchor="middle" fill="#a1a1aa" font-size="24">AI receptionist · books appointments</text>
+
+  <g stroke="#52525b" stroke-width="2" fill="none">
+    <path d="M425 400H475M595 400H645M765 400H815"/>
+  </g>
+
+  <g>
+    <rect x="315" y="345" width="110" height="110" rx="20" fill="#27272a" stroke="#3f3f46" stroke-width="2"/>
+    <path d="M350 378c0-2 2-5 5-5h8c2 0 4 2 5 4l3 11c1 2 0 5-2 6l-6 4c4 9 10 15 19 19l4-6c2-2 4-3 6-2l11 3c2 1 4 3 4 5v8c0 3-2 5-5 5-30 0-52-22-52-52z" fill="#fafafa"/>
+    <text x="370" y="490" text-anchor="middle" fill="#d4d4d8" font-size="20" font-weight="600">Call</text>
+    <text x="370" y="516" text-anchor="middle" fill="#71717a" font-size="16">Twilio</text>
+  </g>
+
+  <g>
+    <rect x="485" y="345" width="110" height="110" rx="20" fill="#27272a" stroke="#3f3f46" stroke-width="2"/>
+    <g fill="#fafafa">
+      <rect x="512" y="390" width="7" height="20" rx="3.5"/>
+      <rect x="526" y="378" width="7" height="44" rx="3.5"/>
+      <rect x="540" y="366" width="7" height="68" rx="3.5"/>
+      <rect x="554" y="381" width="7" height="38" rx="3.5"/>
+      <rect x="568" y="392" width="7" height="16" rx="3.5"/>
+    </g>
+    <text x="540" y="490" text-anchor="middle" fill="#d4d4d8" font-size="20" font-weight="600">Voice agent</text>
+    <text x="540" y="516" text-anchor="middle" fill="#71717a" font-size="16">ElevenLabs</text>
+  </g>
+
+  <g>
+    <rect x="655" y="345" width="110" height="110" rx="20" fill="#27272a" stroke="#3f3f46" stroke-width="2"/>
+    <g fill="none" stroke="#fafafa" stroke-width="4.5" stroke-linecap="round">
+      <circle cx="688" cy="400" r="8"/><circle cx="734" cy="377" r="8"/><circle cx="734" cy="423" r="8"/>
+      <path d="M696 396l31-15M696 404l31 15"/>
+    </g>
+    <text x="710" y="490" text-anchor="middle" fill="#d4d4d8" font-size="20" font-weight="600">Workflow</text>
+    <text x="710" y="516" text-anchor="middle" fill="#71717a" font-size="16">n8n</text>
+  </g>
+
+  <g>
+    <rect x="825" y="345" width="110" height="110" rx="20" fill="#fafafa"/>
+    <g fill="none" stroke="#18181b" stroke-width="4.5" stroke-linejoin="round">
+      <rect x="854" y="373" width="52" height="50" rx="7"/>
+      <path d="M854 388h52M867 366v13M893 366v13"/>
+      <path d="M868 406l8 8 15-15" stroke-linecap="round"/>
+    </g>
+    <text x="880" y="490" text-anchor="middle" fill="#d4d4d8" font-size="20" font-weight="600">Booked</text>
+    <text x="880" y="516" text-anchor="middle" fill="#71717a" font-size="16">Appointment</text>
+  </g>
+</svg>
