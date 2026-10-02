@@ -34,16 +34,19 @@ Pour activer Google Analytics (facultatif), définis la variable d'environnement
 
 ## Mettre en ligne gratuitement
 
-### Option A : GitHub Pages (en place)
-
 Dépôt : https://github.com/allan77x77/new-portfolio
-Site : https://allan77x77.github.io/new-portfolio/
 
-Le workflow `.github/workflows/deploy.yml` construit et publie le site à chaque push sur `main`. Il règle seul le sous-dossier `/new-portfolio`.
+Pour l'instant, le site n'est **pas déployé** : le code est seulement stocké dans le dépôt. Un `git push` ne publie rien.
 
-Réglage à faire une seule fois sur GitHub : **Settings → Pages → Source : GitHub Actions**.
+### Option A : GitHub Pages (quand tu voudras publier)
 
-Pour publier une modification :
+Le workflow `.github/workflows/deploy.yml` est en mode manuel. Il règle seul le sous-dossier `/new-portfolio`.
+
+1. Sur GitHub : **Settings → Pages → Source : GitHub Actions**.
+2. **Actions → Deploy to GitHub Pages → Run workflow**.
+3. Le site sera en ligne sur https://allan77x77.github.io/new-portfolio/ 1 à 2 minutes plus tard.
+
+Pour envoyer une modification dans le dépôt, sans la publier :
 
 ```bash
 git add .

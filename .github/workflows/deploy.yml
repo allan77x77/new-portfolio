@@ -1,8 +1,8 @@
 name: Deploy to GitHub Pages
 
+# Manual only: nothing is deployed on push.
+# To publish: enable Settings → Pages → Source: GitHub Actions, then Actions → "Deploy to GitHub Pages" → Run workflow.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
