@@ -34,22 +34,22 @@ Pour activer Google Analytics (facultatif), définis la variable d'environnement
 
 ## Mettre en ligne gratuitement
 
-### Option A : GitHub Pages (garde l'adresse `allan77x77.github.io/portfolio/`)
+### Option A : GitHub Pages (en place)
 
-Le workflow `.github/workflows/deploy.yml` construit et publie le site à chaque push sur `main`.
+Dépôt : https://github.com/allan77x77/new-portfolio
+Site : https://allan77x77.github.io/new-portfolio/
+
+Le workflow `.github/workflows/deploy.yml` construit et publie le site à chaque push sur `main`. Il règle seul le sous-dossier `/new-portfolio`.
+
+Réglage à faire une seule fois sur GitHub : **Settings → Pages → Source : GitHub Actions**.
+
+Pour publier une modification :
 
 ```bash
-git init
 git add .
-git commit -m "New portfolio"
-git branch -M main
-git remote add origin https://github.com/allan77x77/portfolio.git
-git push -u origin main --force
+git commit -m "Update portfolio"
+git push
 ```
-
-⚠️ `--force` remplace l'ancien site React **et l'historique de la branche `main`**. Pour garder l'ancien, pousse plutôt vers un nouveau dépôt.
-
-Ensuite, sur GitHub : **Settings → Pages → Source : GitHub Actions**. Le site est en ligne 1 à 2 minutes plus tard.
 
 ### Option B : Vercel
 
