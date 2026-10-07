@@ -52,7 +52,7 @@ export default async function Project({ params }: ProjectPageProps) {
         href="/projects"
         className={cn(
           buttonVariants({ variant: "ghost" }),
-          "absolute left-[-200px] top-14 hidden xl:inline-flex"
+          "mb-4 -ml-4 inline-flex text-muted-foreground hover:text-foreground xl:absolute xl:left-[-200px] xl:top-14 xl:ml-0"
         )}
       >
         <Icons.chevronLeft className="mr-2 h-4 w-4" />

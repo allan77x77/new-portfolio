@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1280" height="720" fill="#18181b"/>
+  <g fill="none" stroke="#27272a" stroke-width="1">
+    <path d="M0 120H1280M0 240H1280M0 360H1280M0 480H1280M0 600H1280"/>
+    <path d="M160 0V720M320 0V720M480 0V720M640 0V720M800 0V720M960 0V720M1120 0V720"/>
+  </g>
+
+  <!-- Everything sits in the central 680px so square crops keep the whole drawing. -->
+  <text x="640" y="200" text-anchor="middle" fill="#fafafa" font-size="60" font-weight="700" letter-spacing="-1">Email Triage Agent</text>
+  <text x="640" y="246" text-anchor="middle" fill="#a1a1aa" font-size="24">Reads the shared mailbox · tags every email</text>
+
+  <g stroke="#52525b" stroke-width="2" fill="none">
+    <path d="M425 400H475M595 400H645M765 400H815"/>
+  </g>
+
+  <g>
+    <rect x="315" y="345" width="110" height="110" rx="20" fill="#27272a" stroke="#3f3f46" stroke-width="2"/>
+    <g fill="none" stroke="#fafafa" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="344" y="378" width="52" height="38" rx="6"/>
+      <path d="M344 384l26 18 26-18"/>
+    </g>
+    <text x="370" y="490" text-anchor="middle" fill="#d4d4d8" font-size="20" font-weight="600">Inbox</text>
+    <text x="370" y="516" text-anchor="middle" fill="#71717a" font-size="16">Shared mailbox</text>
+  </g>
+
+  <g>
+    <rect x="485" y="345" width="110" height="110" rx="20" fill="#27272a" stroke="#3f3f46" stroke-width="2"/>
+    <g fill="none" stroke="#fafafa" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="516" y="374" width="48" height="48" rx="12"/>
+      <circle cx="531" cy="394" r="3.5" fill="#fafafa" stroke="none"/>
+      <circle cx="549" cy="394" r="3.5" fill="#fafafa" stroke="none"/>
+      <path d="M530 408h20"/>
+    </g>
+    <text x="540" y="490" text-anchor="middle" fill="#d4d4d8" font-size="20" font-weight="600">Classify</text>
+    <text x="540" y="516" text-anchor="middle" fill="#71717a" font-size="16">Language model</text>
+  </g>
+
+  <g>
+    <rect x="655" y="345" width="110" height="110" rx="20" fill="#27272a" stroke="#3f3f46" stroke-width="2"/>
+    <g fill="none" stroke="#fafafa" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M684 396l24-24h26v26l-24 24z"/>
+      <circle cx="722" cy="384" r="4"/>
+      <path d="M680 420l10 10"/>
+    </g>
+    <text x="710" y="490" text-anchor="middle" fill="#d4d4d8" font-size="20" font-weight="600">3 tags</text>
+    <text x="710" y="516" text-anchor="middle" fill="#71717a" font-size="16">Type · customer · urgency</text>
+  </g>
+
+  <g>
+    <rect x="825" y="345" width="110" height="110" rx="20" fill="#fafafa"/>
+    <g fill="none" stroke="#18181b" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M852 376h56v12h-56z"/>
+      <path d="M857 388v36h46v-36"/>
+      <path d="M871 402h18"/>
+    </g>
+    <text x="880" y="490" text-anchor="middle" fill="#d4d4d8" font-size="20" font-weight="600">Triaged</text>
+    <text x="880" y="516" text-anchor="middle" fill="#71717a" font-size="16">Noise archived</text>
+  </g>
+</svg>
