@@ -25,7 +25,7 @@ export const skills: skillsInterface[] = [
   {
     name: "Machine Learning",
     description:
-      "Supervised, unsupervised and reinforcement learning, studied in my MSc at UTM.",
+      "Supervised, unsupervised and reinforcement learning, studied in my MSc at the University of Technology, Mauritius.",
     icon: Icons.ai,
   },
   {

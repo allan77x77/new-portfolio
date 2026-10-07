@@ -88,8 +88,9 @@ export default function IndexPage() {
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-              MSc AI &amp; Machine Learning graduate from UTM with two years of
-              full-stack experience. I build modern web applications and
+              MSc AI &amp; Machine Learning graduate from the University of
+              Technology, Mauritius, with two years of full-stack experience. I
+              build modern web applications and
               integrate AI solutions (MCP, AI models and automation) to solve
               real-world business challenges. Open to new opportunities.
             </p>

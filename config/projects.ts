@@ -30,6 +30,194 @@ export interface ProjectInterface {
 
 export const Projects: ProjectInterface[] = [
   {
+    id: "mark-ai",
+    companyName: "MARK AI",
+    type: "Professional",
+    category: ["AI", "Full Stack", "Automation"],
+    shortDescription:
+      "An AI marketing platform that researches a brand's market, writes the content, plans it on a calendar and publishes it to LinkedIn, Instagram and Facebook.",
+    techStack: [
+      "Next.js",
+      "Typescript",
+      "AI Models",
+      "n8n",
+      "Microsoft Entra ID",
+      "LinkedIn API",
+      "Meta API",
+    ],
+    companyLogoImg: withBase("/projects/markai-dashboard.png"),
+    pagesInfoArr: [
+      {
+        title: "1. Market research",
+        description:
+          "The platform studies a brand: market gaps, audience personas, competitors and social presence, and turns them into a prioritised report.",
+        imgArr: [],
+      },
+      {
+        title: "2. Content generation",
+        description:
+          "From that research it drafts posts for each channel: caption, hashtags, headline, call to action and the image to go with them.",
+        imgArr: [],
+      },
+      {
+        title: "3. Editorial calendar",
+        description:
+          "Each piece of content gets a slot. Nothing is published until it has been reviewed and approved.",
+        imgArr: [],
+      },
+      {
+        title: "4. Automated publishing",
+        description:
+          "A publishing workflow routes each approved item to the right channel and records whether it went out or failed.",
+        imgArr: [],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "MARK AI is a marketing platform that covers the whole chain, from understanding a brand's market to publishing on its social channels. Rather than producing posts in isolation, it starts from research: it identifies market gaps, builds audience personas, analyses competitors and ranks the opportunities by priority.",
+        "That research then feeds content generation and an editorial calendar. Once an item is approved, an automated workflow publishes it to LinkedIn, Instagram or Facebook and writes back the result, so the team always knows what actually went out.",
+        "Access is tied to the company directory, so only internal users can sign in.",
+      ],
+      bullets: [
+        "Generates market research reports: gaps, personas, competitors, priorities.",
+        "Drafts the content for each channel, image included.",
+        "Plans posts on an editorial calendar, with review before publishing.",
+        "Publishes automatically to LinkedIn, Instagram and Facebook, and records the outcome.",
+        "Sign-in handled by the company identity provider.",
+      ],
+    },
+  },
+  {
+    id: "cashy-pos",
+    companyName: "Cashy — Grocery POS",
+    type: "Professional",
+    category: ["Point of Sale", "Full Stack"],
+    shortDescription:
+      "A till for organic grocery stores: scanning, weighing, promotions and cash sessions. It keeps serving customers when the internet drops and pushes every receipt back to the ERP.",
+    techStack: ["Business Central", "REST API", "Desktop App", "Typescript"],
+    companyLogoImg: withBase("/projects/cashy-app.png"),
+    pagesInfoArr: [
+      {
+        title: "Sale in progress",
+        description:
+          "Weighed produce, VAT per line and the running total. The cashier screen is mirrored on a second display facing the customer.",
+        imgArr: [withBase("/projects/cashy-sale.png")],
+      },
+      {
+        title: "Payment",
+        description:
+          "Cash, card and QR payment, with change calculated automatically and the receipt sent to the fiscal journal.",
+        imgArr: [withBase("/projects/cashy-payment.png")],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "Cashy is the checkout front office for a network of organic grocery stores. The ERP (Microsoft Dynamics 365 Business Central) owns the master data — items, prices, stock, promotions, loyalty — while the till owns the in-store experience: ringing items up, taking payment and closing the day.",
+        "Power and internet cuts are common locally, so the till is built to keep selling offline and to catch up on its own once the connection returns. Each receipt, stock movement and cash session is queued and pushed back to the ERP.",
+        "Every lane runs on a dual screen: the cashier's side and a customer-facing display that follows the basket live.",
+      ],
+      bullets: [
+        "Barcode scanning, search by name, and connected scale for produce sold by weight.",
+        "Cash, card, QR and split payment, with automatic change.",
+        "Promotions and loyalty rules pushed down from the ERP and applied at the till.",
+        "Cash operations: opening, takings, closing and Z report.",
+        "Offline mode with automatic catch-up once the connection is back.",
+        "Customer-facing second display, synchronised with the basket.",
+      ],
+    },
+  },
+  {
+    id: "pharmacy-pos",
+    companyName: "Pharmacy POS",
+    type: "Professional",
+    category: ["Point of Sale", "Full Stack"],
+    shortDescription:
+      "A till built for pharmacy retail: prescriptions, batch and expiry tracking, split VAT between exempt medicines and standard-rate items, returns and quotations.",
+    techStack: [
+      "Business Central",
+      "REST API",
+      "Microsoft Entra ID",
+      "Desktop App",
+      "Typescript",
+    ],
+    companyLogoImg: withBase("/projects/pharmacy-sale.png"),
+    pagesInfoArr: [
+      {
+        title: "Payment",
+        description:
+          "Out-of-pocket amount, split payment across several tenders, and the commission cost of each payment method.",
+        imgArr: [withBase("/projects/pharmacy-payment.png")],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "A pharmacy does not sell like a grocery store: the same basket mixes prescription medicines, over-the-counter products and ordinary retail items, each with its own tax treatment. This till was designed around those rules.",
+        "Stock is tracked by batch and expiry date, with the oldest batch dispensed first. Prescriptions are entered line by line, with the dispensed quantity, before being sent to the basket. Returns and quotations are handled from the same screen.",
+        "Patient data stays minimal and is masked on screen, and the till can keep working offline, queueing its receipts for the fiscal journal.",
+      ],
+      bullets: [
+        "Prescription entry with dose, duration and dispensed quantity.",
+        "Batch and expiry tracking, oldest batch dispensed first.",
+        "VAT split between exempt medicines, zero-rated goods and standard-rate items.",
+        "Returns, quotations and invoices from the same screen.",
+        "Split payment across several tenders, with the cost of each method shown.",
+        "Staff sign-in by PIN or through the company identity provider.",
+        "Patient identifiers masked on screen.",
+      ],
+    },
+  },
+  {
+    id: "email-triage-agent",
+    companyName: "Email Triage Agent",
+    type: "Professional",
+    category: ["AI", "Automation"],
+    shortDescription:
+      "An agent that watches a shared mailbox, classifies every incoming email by type, customer and urgency, tags it in Outlook and archives whatever nobody needs to act on.",
+    techStack: ["n8n", "Microsoft Graph", "AI Models", "SQL"],
+    companyLogoImg: withBase("/projects/email-triage.svg"),
+    pagesInfoArr: [
+      {
+        title: "1. Reading the mailbox",
+        description:
+          "Every few minutes the agent picks up the emails that have not been triaged yet, in small batches, and cleans up the HTML to keep only the text.",
+        imgArr: [],
+      },
+      {
+        title: "2. Thread context",
+        description:
+          "It pulls the last messages of the same conversation, so a reply is judged in the context of the thread rather than on its own.",
+        imgArr: [],
+      },
+      {
+        title: "3. Classification",
+        description:
+          "A language model decides what kind of email it is and how urgent it is. The customer, on the other hand, is resolved against the reference data, not guessed.",
+        imgArr: [],
+      },
+      {
+        title: "4. Tagging and archiving",
+        description:
+          "The three tags are written back as Outlook categories. Noise — automated reports, out-of-office replies, bounces — is moved to the archive.",
+        imgArr: [],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "A shared mailbox receives everything at once: requests that need invoicing, questions, disputes, approvals, and a steady stream of automated noise. Sorting it by hand costs time and things slip through.",
+        "This agent triages the mailbox on its own. Every email receives exactly three tags — what kind of email it is, which customer it belongs to and how soon it needs an answer — attached as Outlook categories so they are visible to everyone directly in Outlook.",
+        "The split of responsibilities matters: the language model judges the content and the urgency, but the customer is resolved deterministically against the reference data, with a correction table layered on top. Downstream systems and people read that tag and trust it.",
+      ],
+      bullets: [
+        "Runs continuously on a shared mailbox, in bounded batches.",
+        "Classifies each email by type, customer and urgency.",
+        "Uses the thread history so replies are read in context.",
+        "Resolves the customer against the reference data rather than letting the model guess, with an admin correction table.",
+        "Writes the tags back as Outlook categories, visible to the whole team.",
+        "Archives automated noise so the inbox only holds what needs action.",
+      ],
+    },
+  },
+  {
     id: "agent-ai-call",
     companyName: "Agent AI Call",
     type: "Personal",

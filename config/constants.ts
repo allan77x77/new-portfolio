@@ -77,6 +77,13 @@ export type ValidSkills =
   | "ElevenLabs"
   | "Twilio"
   | "Odoo"
+  | "Business Central"
+  | "Microsoft Graph"
+  | "Microsoft Entra ID"
+  | "REST API"
+  | "Desktop App"
+  | "LinkedIn API"
+  | "Meta API"
   | "WordPress"
   | "Business Automation"
   | "Custom Software";
@@ -91,7 +98,8 @@ export type ValidCategory =
   | "3D Modeling"
   | "AI"
   | "Automation"
-  | "Machine Learning";
+  | "Machine Learning"
+  | "Point of Sale";
 
 export type ValidExpType = "Personal" | "Professional";
 
