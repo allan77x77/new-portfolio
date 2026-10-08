@@ -150,7 +150,7 @@ export default function IndexPage() {
           </AnimatedText>
         </div>
         <div className="w-full">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full items-stretch">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 w-full items-stretch">
             {featuredProjects.map((exp, index) => (
               <AnimatedSection
                 key={exp.id}

@@ -408,4 +408,4 @@ export const Projects: ProjectInterface[] = [
   },
 ];
 
-export const featuredProjects = Projects.slice(0, 3);
+export const featuredProjects = Projects.slice(0, 4);
