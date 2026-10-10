@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1280" height="720" fill="#18181b"/>
+  <g fill="none" stroke="#27272a" stroke-width="1">
+    <path d="M0 120H1280M0 240H1280M0 360H1280M0 480H1280M0 600H1280"/>
+    <path d="M160 0V720M320 0V720M480 0V720M640 0V720M800 0V720M960 0V720M1120 0V720"/>
+  </g>
+
+  <text x="640" y="200" text-anchor="middle" fill="#fafafa" font-size="56" font-weight="700" letter-spacing="-1">AI Marketing Platform</text>
+  <text x="640" y="246" text-anchor="middle" fill="#a1a1aa" font-size="24">From market research to published posts</text>
+
+  <g stroke="#52525b" stroke-width="2" fill="none">
+    <path d="M425 400H475M595 400H645M765 400H815"/>
+  </g>
+
+  <!-- Research -->
+  <g>
+    <rect x="315" y="345" width="110" height="110" rx="20" fill="#27272a" stroke="#3f3f46" stroke-width="2"/>
+    <g fill="none" stroke="#fafafa" stroke-width="5" stroke-linecap="round">
+      <circle cx="363" cy="393" r="19"/>
+      <path d="M377 407l16 16"/>
+    </g>
+    <text x="370" y="490" text-anchor="middle" fill="#d4d4d8" font-size="20" font-weight="600">Research</text>
+    <text x="370" y="516" text-anchor="middle" fill="#71717a" font-size="16">Market &amp; personas</text>
+  </g>
+
+  <!-- Content -->
+  <g>
+    <rect x="485" y="345" width="110" height="110" rx="20" fill="#27272a" stroke="#3f3f46" stroke-width="2"/>
+    <g fill="none" stroke="#fafafa" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="515" y="370" width="50" height="60" rx="6"/>
+      <path d="M526 388h28M526 400h28M526 412h18"/>
+    </g>
+    <text x="540" y="490" text-anchor="middle" fill="#d4d4d8" font-size="20" font-weight="600">Content</text>
+    <text x="540" y="516" text-anchor="middle" fill="#71717a" font-size="16">AI-generated posts</text>
+  </g>
+
+  <!-- Calendar -->
+  <g>
+    <rect x="655" y="345" width="110" height="110" rx="20" fill="#27272a" stroke="#3f3f46" stroke-width="2"/>
+    <g fill="none" stroke="#fafafa" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="684" y="373" width="52" height="50" rx="7"/>
+      <path d="M684 388h52M697 366v13M723 366v13"/>
+    </g>
+    <g fill="#fafafa"><rect x="694" y="398" width="8" height="8" rx="2"/><rect x="706" y="398" width="8" height="8" rx="2"/><rect x="718" y="398" width="8" height="8" rx="2"/><rect x="694" y="410" width="8" height="8" rx="2"/></g>
+    <text x="710" y="490" text-anchor="middle" fill="#d4d4d8" font-size="20" font-weight="600">Calendar</text>
+    <text x="710" y="516" text-anchor="middle" fill="#71717a" font-size="16">Review &amp; approve</text>
+  </g>
+
+  <!-- Publish -->
+  <g>
+    <rect x="825" y="345" width="110" height="110" rx="20" fill="#fafafa"/>
+    <path d="M851 400l58-26-20 60-12-22z" fill="none" stroke="#18181b" stroke-width="4.5" stroke-linejoin="round"/>
+    <path d="M877 412l32-38" stroke="#18181b" stroke-width="4.5" stroke-linecap="round"/>
+    <text x="880" y="490" text-anchor="middle" fill="#d4d4d8" font-size="20" font-weight="600">Publish</text>
+    <text x="880" y="516" text-anchor="middle" fill="#71717a" font-size="16">Social channels</text>
+  </g>
+</svg>

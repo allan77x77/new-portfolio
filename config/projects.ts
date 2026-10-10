@@ -30,8 +30,8 @@ export interface ProjectInterface {
 
 export const Projects: ProjectInterface[] = [
   {
-    id: "mark-ai",
-    companyName: "MARK AI",
+    id: "ai-marketing-platform",
+    companyName: "AI Marketing Platform",
     type: "Professional",
     category: ["AI", "Full Stack", "Automation"],
     shortDescription:
@@ -45,7 +45,7 @@ export const Projects: ProjectInterface[] = [
       "LinkedIn API",
       "Meta API",
     ],
-    companyLogoImg: withBase("/projects/markai-dashboard.png"),
+    companyLogoImg: withBase("/projects/ai-marketing.svg"),
     pagesInfoArr: [
       {
         title: "1. Market research",
@@ -74,7 +74,7 @@ export const Projects: ProjectInterface[] = [
     ],
     descriptionDetails: {
       paragraphs: [
-        "MARK AI is a marketing platform that covers the whole chain, from understanding a brand's market to publishing on its social channels. Rather than producing posts in isolation, it starts from research: it identifies market gaps, builds audience personas, analyses competitors and ranks the opportunities by priority.",
+        "This marketing platform covers the whole chain, from understanding a brand's market to publishing on its social channels. Rather than producing posts in isolation, it starts from research: it identifies market gaps, builds audience personas, analyses competitors and ranks the opportunities by priority.",
         "That research then feeds content generation and an editorial calendar. Once an item is approved, an automated workflow publishes it to LinkedIn, Instagram or Facebook and writes back the result, so the team always knows what actually went out.",
         "Access is tied to the company directory, so only internal users can sign in.",
       ],
@@ -88,31 +88,31 @@ export const Projects: ProjectInterface[] = [
     },
   },
   {
-    id: "cashy-pos",
-    companyName: "Cashy — Grocery POS",
+    id: "grocery-pos",
+    companyName: "Grocery Point of Sale",
     type: "Professional",
     category: ["Point of Sale", "Full Stack"],
     shortDescription:
-      "A till for organic grocery stores: scanning, weighing, promotions and cash sessions. It keeps serving customers when the internet drops and pushes every receipt back to the ERP.",
+      "A till for grocery stores: scanning, weighing, promotions and cash sessions. It keeps serving customers when the internet drops and pushes every receipt back to the ERP.",
     techStack: ["Business Central", "REST API", "Desktop App", "Typescript"],
-    companyLogoImg: withBase("/projects/cashy-app.png"),
+    companyLogoImg: withBase("/projects/grocery-pos.svg"),
     pagesInfoArr: [
       {
         title: "Sale in progress",
         description:
           "Weighed produce, VAT per line and the running total. The cashier screen is mirrored on a second display facing the customer.",
-        imgArr: [withBase("/projects/cashy-sale.png")],
+        imgArr: [withBase("/projects/grocery-pos.svg")],
       },
       {
         title: "Payment",
         description:
           "Cash, card and QR payment, with change calculated automatically and the receipt sent to the fiscal journal.",
-        imgArr: [withBase("/projects/cashy-payment.png")],
+        imgArr: [withBase("/projects/pos-payment.svg")],
       },
     ],
     descriptionDetails: {
       paragraphs: [
-        "Cashy is the checkout front office for a network of organic grocery stores. The ERP (Microsoft Dynamics 365 Business Central) owns the master data — items, prices, stock, promotions, loyalty — while the till owns the in-store experience: ringing items up, taking payment and closing the day.",
+        "This till is the checkout front office for a network of grocery stores. The ERP (Microsoft Dynamics 365 Business Central) owns the master data — items, prices, stock, promotions, loyalty — while the till owns the in-store experience: ringing items up, taking payment and closing the day.",
         "Power and internet cuts are common locally, so the till is built to keep selling offline and to catch up on its own once the connection returns. Each receipt, stock movement and cash session is queued and pushed back to the ERP.",
         "Every lane runs on a dual screen: the cashier's side and a customer-facing display that follows the basket live.",
       ],
@@ -128,7 +128,7 @@ export const Projects: ProjectInterface[] = [
   },
   {
     id: "pharmacy-pos",
-    companyName: "Pharmacy POS",
+    companyName: "Pharmacy Point of Sale",
     type: "Professional",
     category: ["Point of Sale", "Full Stack"],
     shortDescription:
@@ -140,13 +140,13 @@ export const Projects: ProjectInterface[] = [
       "Desktop App",
       "Typescript",
     ],
-    companyLogoImg: withBase("/projects/pharmacy-sale.png"),
+    companyLogoImg: withBase("/projects/pharmacy-pos.svg"),
     pagesInfoArr: [
       {
         title: "Payment",
         description:
           "Out-of-pocket amount, split payment across several tenders, and the commission cost of each payment method.",
-        imgArr: [withBase("/projects/pharmacy-payment.png")],
+        imgArr: [withBase("/projects/pos-payment.svg")],
       },
     ],
     descriptionDetails: {
